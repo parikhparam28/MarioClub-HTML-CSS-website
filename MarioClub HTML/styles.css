@@ -1,0 +1,227 @@
+
+header{
+    background-color: #f63232;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    padding: 2px 15px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+.banner .welcome{
+    background-color: #feb614;
+    color: white;
+    position: absolute;
+    padding: 20px;
+    left: 0%;
+    top: 30%;
+}
+
+.banner h2{
+    font-size: 54px;
+}
+
+.banner span{
+    font-size: 1.3em;
+}
+
+nav{
+    background-color: #f4f4f4;
+    padding: 5px;
+    position: sticky;
+    top: 60px;
+}
+
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 18px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+nav li a.join{
+    color: #f63232;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 50px auto;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    color: #f63232;
+    font-size: 48px;
+}
+
+article p{
+    line-height: 1.5em;
+    color: #4b4b4b;
+}
+
+.images{
+    text-align: center;
+    white-space: nowrap;
+    margin: 60px 0;
+}
+
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 20px;
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+section.join{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+.join h2{
+    font-size: 36px;
+}
+
+form input{
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 28px;
+    border: 3px solid white;
+}
+
+footer{
+    background: #f63232;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+/* pseudo classes */
+
+nav li a:hover{
+    text-decoration: underline;
+    color: rgb(33, 219, 42);
+}
+
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+
+form input:focus{
+    border: 2px dashed #4b4b4b;
+    outline: none;
+}
+
+form input:valid{
+    border: 2px solid #71d300;
+}
+
+section.join p::first-letter{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p::selection{
+    background: #f63232;
+    color: white;
+}
+
+p::after{
+    content: '...';
+}
+
+
+
+/* media queries */
+
+
+
+@media screen and (max-width: 960px) {
+    
+    .banner .welcome h2{
+        font-size: 30px;
+        padding: 10px;
+    }
+    nav li{
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+        margin: 0;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    nav li{
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0px;
+    }
+}
